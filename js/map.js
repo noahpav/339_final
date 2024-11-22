@@ -30,14 +30,14 @@ map.setMaxBounds(bounds);
 
 // Custom Icon Defintions
 const trail_icon = L.icon({
-  iconUrl: "images/arrowhead.png", // Path to the custom icon
+  iconUrl: "339_final/images/arrowhead.png", // Path to the custom icon
   iconSize: [30, 40], // Size of the icon [width, height]
   iconAnchor: [15, 40], // Anchor point of the icon (center bottom)
   popupAnchor: [0, -40], // Anchor for the popup relative to the icon
 });
 
 const trail_icon_hover = L.icon({
-  iconUrl: "images/arrowhead.png", // Path to the custom icon
+  iconUrl: "339_final/images/arrowhead.png", // Path to the custom icon
   iconSize: [55, 65], // Size of the icon [width, height]
   iconAnchor: [27.5, 65], // Anchor point of the icon (center bottom)
   popupAnchor: [0, -40], // Anchor for the popup relative to the icon
