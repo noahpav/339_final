@@ -50,14 +50,14 @@ fetch("data/mi_north_trail.geojson")
     trailLayer.on("mouseover", function () {
       trailLayer.setStyle({
         color: "#268DB2", // Highlight color (cyan)
-        weight: 2, // Thicker line on hover
+        weight: 3, // Thicker line on hover
       });
     });
 
     trailLayer.on("mouseout", function () {
       trailLayer.setStyle({
         color: "#2596be", // Original Light Blue Trail
-        weight: 1, // Original line thickness
+        weight: 2, // Original line thickness
       });
     });
   })
