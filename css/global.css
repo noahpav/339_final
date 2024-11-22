@@ -1,0 +1,40 @@
+/* global.css */
+
+/* Light Mode Styles (Default) */
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Layout */
+header {
+    background: #00287E;
+    padding: 10px 5px;
+    text-align: left;
+    width: 100%;
+}
+header img {
+    width: 10%;
+}
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding-left: 10px;
+}
+
+/* NavBar Layout */
+.navbar {
+    /* Display */
+    display: grid;
+    width: 100%;
+    padding: 8px;
+    grid-template-columns: repeat(3, 1fr);
+
+    /* Styles */
+    border: solid;
+    border-radius: 10px;
+    text-align: center;
+}

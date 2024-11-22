@@ -1,0 +1,18 @@
+/* global.css */
+
+/* Light Mode Styles (Default) */
+
+/* General Page Styling */
+h1 {
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+/* Map */
+#map {
+    height: 500px;
+    width: 100%;
+    margin: 8px auto;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
