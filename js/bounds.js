@@ -1,5 +1,5 @@
 // Load GeoJSON for park boundaries
-fetch("../data/parks_data.geojson")
+fetch("data/parks_data.geojson")
   .then((response) => response.json())
   .then((data) => {
     L.geoJSON(data, {
@@ -36,7 +36,7 @@ fetch("../data/parks_data.geojson")
   .catch((error) => console.error("Error loading parks GeoJSON:", error));
 
 // Load GeoJSON for North Country Trail
-fetch("../data/mi_north_trail.geojson")
+fetch("data/mi_north_trail.geojson")
   .then((response) => response.json())
   .then((data) => {
     const trailLayer = L.geoJSON(data, {
