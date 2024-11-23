@@ -17,71 +17,6 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   maxZoom: 100,
 }).addTo(map);
 
-// Load GeoJSON for park boundaries
-fetch("data/parks_data.geojson")
-  .then((response) => response.json())
-  .then((data) => {
-    L.geoJSON(data, {
-      style: {
-        color: "#006400", // Dark Green Trail
-        weight: 1, // Line thickness
-        fillColor: "#00B100", // Light Green FillColor
-        fillOpacity: 0.15, // Fill Opacity
-      },
-      onEachFeature: function (feature, layer) {
-        layer.bindPopup(`<b>${feature.properties.name}</b>`);
-
-        // Add hover effects
-        layer.on("mouseover", function () {
-          layer.setStyle({
-            color: "#006400", // Dark Green Trail
-            weight: 2, // Line thickness
-            fillColor: "#00B100", // Light Green FillColor
-            fillOpacity: 0.3, // Fill Opacity
-          });
-        });
-
-        layer.on("mouseout", function () {
-          layer.setStyle({
-            color: "#006400", // Dark Green Trail
-            weight: 1, // Line thickness
-            fillColor: "#00B100", // Light Green FillColor
-            fillOpacity: 0.15, // Fill Opacity
-          });
-        });
-      },
-    }).addTo(map);
-  })
-  .catch((error) => console.error("Error loading parks GeoJSON:", error));
-
-// Load GeoJSON for North Country Trail
-fetch("data/mi_north_trail.geojson")
-  .then((response) => response.json())
-  .then((data) => {
-    const trailLayer = L.geoJSON(data, {
-      style: {
-        color: "#2596be", // Light Blue Trail
-        weight: 1, // Line thickness
-      },
-    }).addTo(map);
-
-    // Add hover effects to the entire trail
-    trailLayer.on("mouseover", function () {
-      trailLayer.setStyle({
-        color: "#268DB2", // Highlight color (cyan)
-        weight: 3, // Thicker line on hover
-      });
-    });
-
-    trailLayer.on("mouseout", function () {
-      trailLayer.setStyle({
-        color: "#2596be", // Original Light Blue Trail
-        weight: 2, // Original line thickness
-      });
-    });
-  })
-  .catch((error) => console.error("Error loading trail GeoJSON:", error));
-
 // Add zoom controls to the bottom left
 L.control
   .zoom({
@@ -96,18 +31,18 @@ const bounds = [
 ];
 map.setMaxBounds(bounds);
 
-// Custom Icon Defintions
+// Custom Icon Definitions
 const trail_icon = L.icon({
-  iconUrl: "/images/arrowhead.png", // Path to the custom icon
-  iconSize: [30, 40], // Size of the icon [width, height]
-  iconAnchor: [15, 40], // Anchor point of the icon (center bottom)
+  iconUrl: "images/arrowhead.png", // Path to the custom icon
+  iconSize: [35, 50], // Size of the icon [width, height]
+  iconAnchor: [17.5, 50], // Anchor point of the icon (center bottom)
   popupAnchor: [0, -40], // Anchor for the popup relative to the icon
 });
 
 const trail_icon_hover = L.icon({
   iconUrl: "images/arrowhead.png", // Path to the custom icon
-  iconSize: [55, 65], // Size of the icon [width, height]
-  iconAnchor: [27.5, 65], // Anchor point of the icon (center bottom)
+  iconSize: [55, 75], // Size of the icon [width, height]
+  iconAnchor: [27.5, 75], // Anchor point of the icon (center bottom)
   popupAnchor: [0, -40], // Anchor for the popup relative to the icon
 });
 
@@ -151,11 +86,14 @@ const parks = [
   },
 ];
 
-// Add pins with popups to the map
 parks.forEach((park) => {
   const marker = L.marker([park.lat, park.lng], { icon: trail_icon }).addTo(
     map
   );
+
+  // Save the marker reference in sharedLayers
+  sharedLayers[park.name] = sharedLayers[park.name] || {};
+  sharedLayers[park.name].pin = marker;
 
   // Add popup to each pin
   marker.bindPopup(`
@@ -163,12 +101,136 @@ parks.forEach((park) => {
     <a href="${park.url}" target="_blank">View Details</a>
   `);
 
-  // Add hover effects
+  // Add hover effects for synchronization
   marker.on("mouseover", function () {
-    this.setIcon(trail_icon_hover); // Change to hover icon
+    this.setIcon(trail_icon_hover); // Highlight pin
+    const boundary = sharedLayers[park.name]?.boundary; // Get associated boundary
+    if (boundary) {
+      if (park.name === "North Country Trail") {
+        boundary.setStyle({
+          color: "#2596be", // Light Blue for trail
+          weight: 2,
+          fillOpacity: 0.3,
+        });
+      } else {
+        boundary.setStyle({
+          color: "#006400", // Dark Green for parks
+          weight: 2,
+          fillOpacity: 0.3,
+        });
+      }
+    }
   });
 
   marker.on("mouseout", function () {
-    this.setIcon(trail_icon); // Revert to original icon
+    this.setIcon(trail_icon); // Reset pin
+    const boundary = sharedLayers[park.name]?.boundary; // Get associated boundary
+    if (boundary) {
+      if (park.name === "North Country Trail") {
+        boundary.setStyle({
+          color: "#2596be", // Light Blue for trail
+          weight: 1,
+          fillOpacity: 0.15,
+        });
+      } else {
+        boundary.setStyle({
+          color: "#006400", // Dark Green for parks
+          weight: 1,
+          fillOpacity: 0.15,
+        });
+      }
+    }
   });
 });
+
+// Load GeoJSON for park boundaries
+fetch("data/parks_data.geojson")
+  .then((response) => response.json())
+  .then((data) => {
+    L.geoJSON(data, {
+      style: {
+        color: "#006400", // Dark Green Trail
+        weight: 1, // Line thickness
+        fillColor: "#00B100", // Light Green FillColor
+        fillOpacity: 0.15, // Fill Opacity
+      },
+      onEachFeature: function (feature, layer) {
+        const parkName = feature.properties.name;
+
+        // Save the layer reference in sharedLayers
+        sharedLayers[parkName] = sharedLayers[parkName] || {};
+        sharedLayers[parkName].boundary = layer;
+
+        layer.bindPopup(`<b>${parkName}</b>`);
+
+        // Add hover effects for boundaries
+        layer.on("mouseover", function () {
+          layer.setStyle({
+            color: "#006400", // Highlight boundary
+            weight: 2,
+            fillOpacity: 0.3,
+          });
+
+          const pin = sharedLayers[parkName]?.pin; // Get associated pin
+          if (pin) pin.setIcon(trail_icon_hover); // Highlight pin
+        });
+
+        layer.on("mouseout", function () {
+          layer.setStyle({
+            color: "#006400", // Reset boundary
+            weight: 1,
+            fillOpacity: 0.15,
+          });
+
+          const pin = sharedLayers[parkName]?.pin; // Get associated pin
+          if (pin) pin.setIcon(trail_icon); // Reset pin
+        });
+      },
+    }).addTo(map);
+  })
+  .catch((error) => console.error("Error loading parks GeoJSON:", error));
+
+// Load GeoJSON for North Country Trail
+fetch("data/mi_north_trail.geojson")
+  .then((response) => response.json())
+  .then((data) => {
+    const trailLayer = L.geoJSON(data, {
+      style: {
+        color: "#2596be", // Light Blue Trail
+        weight: 1, // Line thickness
+      },
+    }).addTo(map);
+
+    // Save the trail layer reference in sharedLayers
+    sharedLayers["North Country Trail"] =
+      sharedLayers["North Country Trail"] || {};
+    sharedLayers["North Country Trail"].boundary = trailLayer;
+
+    // Add hover effects for the trail
+    trailLayer.on("mouseover", function () {
+      trailLayer.setStyle({
+        color: "#2596be", // Highlight color (cyan)
+        weight: 3, // Thicker line on hover
+      });
+
+      const pin = sharedLayers["North Country Trail"]?.pin; // Get associated pin
+      if (pin) pin.setIcon(trail_icon_hover); // Highlight pin
+    });
+
+    trailLayer.on("mouseout", function () {
+      trailLayer.setStyle({
+        color: "#2596be", // Original Light Blue Trail
+        weight: 1, // Original line thickness
+      });
+
+      const pin = sharedLayers["North Country Trail"]?.pin; // Get associated pin
+      if (pin) pin.setIcon(trail_icon); // Reset pin
+    });
+
+    // Bind popup for the trail
+    trailLayer.bindPopup(`
+      <b>North Country Trail</b><br>
+      <a href="https://www.nps.gov/noco/index.htm" target="_blank">View Details</a>
+    `);
+  })
+  .catch((error) => console.error("Error loading trail GeoJSON:", error));
