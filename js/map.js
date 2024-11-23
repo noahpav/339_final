@@ -26,8 +26,8 @@ L.control
 
 // Restrict scrolling to Michigan's bounds
 const bounds = [
-  [55, -75], // Northeast corner
-  [35, -95], // Southwest corner
+  [55, -75], // NE
+  [35, -95], // SW
 ];
 map.setMaxBounds(bounds);
 
@@ -38,7 +38,6 @@ const trail_icon = L.icon({
   iconAnchor: [17.5, 50], // Anchor point of the icon (center bottom)
   popupAnchor: [0, -40], // Anchor for the popup relative to the icon
 });
-
 const trail_icon_hover = L.icon({
   iconUrl: "images/arrowhead.png", // Path to the custom icon
   iconSize: [55, 75], // Size of the icon [width, height]
