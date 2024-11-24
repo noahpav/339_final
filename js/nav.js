@@ -1,6 +1,5 @@
 // nav.js
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("Navigation Script loaded on", window.location.pathname);
   const menuToggle = document.getElementById("menu-toggle");
   const navbar = document.getElementById("navbar");
   const navLinks = document.querySelectorAll(".navbar a");

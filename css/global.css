@@ -19,7 +19,7 @@ body {
 /* Header Layout */
 header {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     background: #00287E;
     padding: 15px 10px;
@@ -91,27 +91,113 @@ header a:hover {
 
 /* Desktop View */
 @media (min-width: 1024px) {
+    /* Reset ununsed values from mobile view */
+    header {
+        display: initial;
+        justify-content: initial;
+        align-items: initial;
+        background: initial;
+        padding: initial;
+        position: initial;
+    }
+
+    header div {
+        display: initial;
+        align-items: initial;
+    }
+    header a {
+        color: initial;
+        text-decoration: initial;
+        font-size: initial;
+        font-weight: initial;
+
+    }
+    header a:hover {
+        color: initial;
+    }
+    .navbar {
+        position: initial;
+        top: initial;
+        right: initial;
+        background-color: #00287E;
+        border: initial;
+        border-radius: initial;
+        padding: initial;
+        width: initial;
+        z-index: initial;
+    }
+    .navbar a {
+        border-bottom: initial;
+    }
+    .navbar a:last-child {
+        border-bottom: initial;
+    }
+
+    .navbar.active {
+        display: initial;
+    }
+
+    /* Header and Nav Styles */
+
     #menu-toggle {
         display: none;
     }
 
+    /* Desktop Styles */
+    /* Grid Setup */
+    header {
+        display: grid;
+        grid-template-columns: 100px auto;
+        grid-template-rows: 80px auto;
+        align-items: center;
+        background-color: #00287E;
+        
+    }
+    .item1 {
+        grid-column: 1;
+        grid-row: span 2;
+    }
+    .item2 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .navbar {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    /* Styling */
+    .item2 {
+        color: white;
+        font-size: 2.2rem;
+        font-weight: bold;
+
+    }
+
+    header a:hover {
+        color: #FBF2FB;
+    }
+    header img {
+        width: 90px;
+        height: auto;
+        padding: 0 0 0 10px;
+    }
     .navbar {
         display: flex;
         flex-direction: row;
-        position: static;
-        background: none;
-        box-shadow: none;
-        margin-top: 0;
+        background-color: #00287E;
+        justify-content: right;
+        font-size: .5rem;
     }
-
     .navbar a {
-        padding: 10px 20px;
-        border: none;
-        text-align: center;
+        padding: 2px 8px;
+        text-align: right;
+        border-left: solid 1px white;
+        font-size: .85rem;
+    }
+    .navbar a:hover {
+        color: white;
     }
 
-    .navbar a:hover {
-        background-color: rgba(0, 71, 178, 0.5);
-        border-radius: 5px;
-    }
+
 }
