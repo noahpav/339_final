@@ -34,6 +34,11 @@ h2 {
 }
 
 /* Section Styling */
+#top-section {
+    border-top: 2px solid #0043c6;
+    margin-top: 10px;
+    padding-top: 10px;
+}
 section p {
     margin-bottom: 15px;
     font-size: 1.1rem;
