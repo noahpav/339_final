@@ -1,35 +1,40 @@
 /* index.css */
 
-/* General Page Styling */
+/* General Page Styling for Mobile  View (default)*/
+main {
+    margin-top: 0;
+    background-color: #ffffff;
+}
 h1 {
     font-size: 2.5rem;
+    font-weight: bold;
     color: #00287E;
     text-align: center;
-    margin: 20px 0;
+    margin: 5px 0;
 }
 
 /* Map */
 #map {
     height: 500px;
     width: 90%;
-    margin: 20px auto;
-    border: 3px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    margin: 5px auto;
+    border: 3px solid #00287E;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.443);
 }
 
-/* Section Styling */
+/* mi_parks Styling */
 #mi_parks {
-    margin: 30px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    font-size: 1.1rem;
-    color: #444;
-    line-height: 1.8;
-}
+    margin: 20px auto;
+    padding: 20px 25px;
 
+    background: #00287E;
+    font-size: 1.1rem;
+    color: #ffffff;
+    line-height: 1.8;
+    width: 100%;
+    border: 1px solid #ddd;
+}
 #mi_parks p {
     margin-bottom: 15px;
 }

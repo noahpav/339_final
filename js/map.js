@@ -51,37 +51,37 @@ const parks = [
     name: "Isle Royale National Park",
     lat: 47.913954,
     lng: -89.050962,
-    url: "parks/isle_royale/isle_royale.html",
+    url: "parks/isle_royale_national_park/isle_royale_national_park.html",
   },
   {
     name: "Keweenaw National Historical Park",
     lat: 47.252385,
     lng: -88.447573,
-    url: "parks/keweenaw/keweenaw.html",
+    url: "parks/keweenaw_national_historical_park/keweenaw_national_historical_park.html",
   },
   {
     name: "Pictured Rocks National Lakeshore",
     lat: 46.548994,
     lng: -86.45635,
-    url: "parks/pictured_rocks/pictured_rocks.html",
+    url: "parks/pictured_rocks_national_lakeshore/pictured_rocks_national_lakeshore.html",
   },
   {
     name: "North Country Trail",
     lat: 45.8174, // Near Mackinac Bridge
     lng: -84.7278,
-    url: "data/north_country_trail.geojson", // Link to GeoJSON or information page
+    url: "parks/north_country_trail/north_country_trail.html",
   },
   {
     name: "Sleeping Bear Dunes National Lakeshore",
     lat: 44.8828,
     lng: -86.0515,
-    url: "parks/sleeping_bear/sleeping_bear.html",
+    url: "parks/sleeping_bear_dunes_national_lakeshore/sleeping_bear_dunes_national_lakeshore.html",
   },
   {
     name: "River Raisin National Battlefield Park",
     lat: 41.915797,
     lng: -83.38125,
-    url: "parks/river_raisin/river_raisin.html",
+    url: "parks/river_raisin_national_battlefield_park/river_raisin_national_battlefield_park.html",
   },
 ];
 
@@ -161,6 +161,7 @@ fetch("data/parks_data.geojson")
         sharedLayers[parkName].boundary = layer;
 
         layer.bindPopup(`<b>${parkName}</b>`);
+        //DEBUG: need to change this so it pops up the pin popup
 
         // Add hover effects for boundaries
         layer.on("mouseover", function () {

@@ -14,10 +14,11 @@
           src="../../images/Coat_of_arms_of_Michigan.svg"
           alt="Michigan State Flag"
         />
-        <a href="../../index.html">Michigan National Parks</a>
+        <a href="../../index.html">Michigan's National Parks</a>
+        <button id="menu-toggle" aria-label="Toggle Navigation Menu">☰</button>
       </div>
     </header>
-    <nav class="navbar">
+    <nav id="navbar" class="navbar">
       <a href="../isle_royale_national_park/isle_royale_national_park.html"
         >Isle Royal</a
       >
@@ -44,11 +45,10 @@
     <main>
       <div><h1>{{ park.name }}</h1></div>
       <section>
-        <h2>Overview</h2>
+        <h2></h2>
         <p>{{ park.overview }}</p>
       </section>
       <section>
-        <h2>Gallery</h2>
         <div id="gallery">
           <img id="galleryImage" src="photos/img0.jpg" alt="Gallery Image" />
           <div class="gallery-controls">
@@ -58,7 +58,7 @@
         </div>
       </section>
       <section>
-        <h2>Activities</h2>
+        <h2>What They Offer</h2>
         <ul>
           {% for activity in park.activities %}
           <li>{{ activity }}</li>
@@ -66,13 +66,14 @@
         </ul>
       </section>
       <section>
-        <h2>History</h2>
+        <h2>Some History</h2>
         {% for hist in park.history %}
         <p>{{ hist }}</p>
         {% endfor %}
       </section>
     </main>
     <footer></footer>
+    <script src="../../js/nav.js"></script>
     <script src="../../js/gallery.js"></script>
   </body>
 </html>
