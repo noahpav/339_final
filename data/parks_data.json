@@ -5,23 +5,23 @@
     "images": [
         {
             "filename": "img0.jpg",
-            "alt_text": "A view of the shoreline at Isle Royale National Park."
+            "alt_text": "A map of Isle Royale National Park"
         },
         {
             "filename": "img1.jpg",
-            "alt_text": "A moose grazing in the forest at Isle Royale."
+            "alt_text": "A fishing cabin on the island"
         },
         {
             "filename": "img2.jpg",
-            "alt_text": "A campsite surrounded by trees on Isle Royale."
+            "alt_text": "Two moose, a cow and calf"
         },
         {
             "filename": "img3.jpg",
-            "alt_text": "Kayakers paddling on the clear waters of Lake Superior."
+            "alt_text": "A hunting cabin on the island"
         },
         {
             "filename": "img4.jpg",
-            "alt_text": "A scenic hiking trail at Isle Royale National Park."
+            "alt_text": "A ship docked at the island's port"
         }
     ],
     "activities": [
@@ -45,23 +45,23 @@
     "images": [
         {
             "filename": "img0.jpg",
-            "alt_text": ""
+            "alt_text": "The downtown Museum"
         },
         {
             "filename": "img1.jpg",
-            "alt_text": ""
+            "alt_text": "An old mining operation building"
         },
         {
             "filename": "img2.jpg",
-            "alt_text": ""
+            "alt_text": "Downtown Calumet"
         },
         {
             "filename": "img3.jpg",
-            "alt_text": ""
+            "alt_text": "The chapel in downtwon Calumet"
         },
         {
             "filename": "img4.jpg",
-            "alt_text": ""
+            "alt_text": "Coppertown USA Mining Museum sign"
         }
     ],
     "activities": [
@@ -83,23 +83,23 @@
     "images": [
         {
         "filename": "img0.jpg",
-        "alt_text": ""
+        "alt_text": "River Raisin Battlefield Visitor Center"
         },
         {
         "filename": "img1.jpg",
-        "alt_text": ""
+        "alt_text": "A group renacting a march"
         },
         {
         "filename": "img2.jpg",
-        "alt_text": ""
+        "alt_text": "A group renacting a firing line"
         },
         {
         "filename": "img3.jpg",
-        "alt_text": ""
+        "alt_text": "School children learning to march"
         },
         {
         "filename": "img4.jpg",
-        "alt_text": ""
+        "alt_text": "The town as pictured during the battle"
         }
     ],
     "activities": [
@@ -121,23 +121,23 @@
     "images": [
         {
             "filename": "img0.jpg",
-            "alt_text": ""
+            "alt_text": "Kayakers in front of some cliffs"
         },
         {
             "filename": "img1.jpg",
-            "alt_text": ""
+            "alt_text": "Pictured rocks cliffs from the water"
         },
         {
             "filename": "img2.jpg",
-            "alt_text": ""
+            "alt_text": "A boat in the water in fron of some cliffs"
         },
         {
             "filename": "img3.jpg",
-            "alt_text": ""
+            "alt_text": "Kayakers underneath the cliffs"
         },
         {
             "filename": "img4.jpg",
-            "alt_text": ""
+            "alt_text": "A bridge in a woodland trail over a small waterfall"
         }
     ],
     "activities": [
@@ -160,23 +160,23 @@
     "images": [
         {
             "filename": "img0.jpg",
-            "alt_text": ""
+            "alt_text": "A map of the Sleeping Bear Lakeshore"
         },
         {
             "filename": "img1.jpg",
-            "alt_text": ""
+            "alt_text": "People climbing up and down the sand dunes"
         },
         {
             "filename": "img2.jpg",
-            "alt_text": ""
+            "alt_text": "Sand dunes and waves"
         },
         {
             "filename": "img3.jpg",
-            "alt_text": ""
+            "alt_text": "A girl on the beach looks on at a sailboat"
         },
         {
             "filename": "img4.jpg",
-            "alt_text": ""
+            "alt_text": "An overhead view of the Sleeping Bear Lakeshore"
         }
     ],
     "activities": [
@@ -197,23 +197,23 @@
         "images": [
       {
         "filename": "img0.jpg",
-        "alt_text": ""
+        "alt_text": "A bridge on the North Country Trail"
       },
       {
         "filename": "img1.jpg",
-        "alt_text": ""
+        "alt_text": "Two backpackers on the North Country Trail"
       },
       {
         "filename": "img2.jpg",
-        "alt_text": ""
+        "alt_text": "A lighthouse as seen on the North Country Trail"
       },
       {
         "filename": "img3.jpg",
-        "alt_text": ""
+        "alt_text": "Lake Superior as seen on the North Country Trail"
       },
       {
         "filename": "img4.jpg",
-        "alt_text": ""
+        "alt_text": "Mosquito Beach as seen on the North Country Trail"
       }
     ],
     "activities": [
