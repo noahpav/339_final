@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Michigan Parks</title>
     <link rel="stylesheet" href="../../css/global.css" />
-    <link rel="stylesheet" href="css/" />
+    <link rel="stylesheet" href="../../css/parks.css" />
   </head>
   <body>
     <header>
@@ -43,8 +43,13 @@
           Upper Peninsula.
         </p>
       </div>
-      <div>
-        <h2>Gallery</h2>
+      <h2>Gallery</h2>
+      <div id="gallery">
+        <img id="galleryImage" src="photos/img0.jpg" alt="Gallery Image" />
+        <div class="gallery-controls">
+          <button id="prevButton">Previous</button>
+          <button id="nextButton">Next</button>
+        </div>
       </div>
       <div>
         <h2>Activities</h2>
@@ -116,5 +121,6 @@
       </div>
     </main>
     <footer></footer>
+    <script src="../../js/gallery.js"></script>
   </body>
 </html>
