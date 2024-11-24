@@ -1,0 +1,235 @@
+[
+  {
+    "name": "Isle Royale National Park",
+    "overview": "A pristine wilderness gem tucked away in the depths of Lake Superior known for its rugged beauty, Isle Royale is a haven for adventurers seeking solitude and a connection with nature. This remote island park is accessible only by boat or seaplane, and with its lush trails, serene waterways, and fascinating ecosystem of wolves and moose, Isle Royale is a naturalist's paradise. Whether you're a backpacker, kayaker, or simply a seeker of tranquility, the park promises an unforgettable experience surrounded by the raw beauty of Michigan’s Upper Peninsula.",
+    "images": [
+        {
+            "filename": "img0.jpg",
+            "alt_text": "A view of the shoreline at Isle Royale National Park."
+        },
+        {
+            "filename": "img1.jpg",
+            "alt_text": "A moose grazing in the forest at Isle Royale."
+        },
+        {
+            "filename": "img2.jpg",
+            "alt_text": "A campsite surrounded by trees on Isle Royale."
+        },
+        {
+            "filename": "img3.jpg",
+            "alt_text": "Kayakers paddling on the clear waters of Lake Superior."
+        },
+        {
+            "filename": "img4.jpg",
+            "alt_text": "A scenic hiking trail at Isle Royale National Park."
+        }
+    ],
+    "activities": [
+        "Hiking and Backpacking: Explore over 165 miles of scenic trails, ranging from short day hikes to multi-day backpacking trips. Popular routes include the Greenstone Ridge Trail and hikes to hidden coves and historic lighthouses.",
+        "Canoeing and Kayaking: Paddle along the island's rugged shoreline or venture into its serene inland lakes for a peaceful experience surrounded by natural beauty.",
+        "Camping: Immerse yourself in the wilderness with a night under the stars at one of the park's remote campsites. Backcountry camping offers a truly off-the-grid experience.",
+        "Fishing: Cast a line in Lake Superior or the island’s inland lakes, home to trout, salmon, and northern pike. Anglers can enjoy world-class fishing in this tranquil setting.",
+        "Wildlife Watching: Spot the island’s iconic moose and elusive wolves, along with foxes, beavers, loons, and other wildlife that thrive in the park's unique ecosystem.",
+        "Boating: Explore the waters around Isle Royale by private boat or on a guided excursion. Discover secluded bays, shipwrecks, and panoramic views of the island.",
+        "Scuba Diving: Dive into history by exploring shipwrecks preserved in the cold, clear waters of Lake Superior, part of the Isle Royale National Park Maritime Heritage Trail."
+    ],
+    "history": [
+        "Isle Royale National Park has a rich history shaped by both nature and human activity...",
+        "In the 19th and early 20th centuries, European settlers and industries arrived, establishing fishing villages, logging camps, and small mining operations. However, the island's rugged terrain and isolation made large-scale development challenging. By the mid-20th century, preservationists advocated for its protection, valuing its pristine ecosystems and wilderness.",
+        "In 1931, Isle Royale was designated as a national park, and in 1980, it became a UNESCO Biosphere Reserve, recognized for its unique ecosystem, including the delicate predator-prey relationship between wolves and moose. Today, the park preserves its natural beauty and cultural history, inviting visitors to explore a landscape shaped by both human ingenuity and the forces of nature."
+    ]
+  },
+  {
+    "name": "Keweenaw National Historical Park",
+    "overview": "Keweenaw National Historical Park, located in Michigan’s Upper Peninsula, preserves and celebrates the rich history of America’s first major copper mining region. Known as 'Copper Country,' this area was once the heart of a booming industry that shaped the local culture, economy, and landscape. Visitors to the park can explore historic mining sites, engage with the stories of immigrant communities, and marvel at the engineering feats that made Keweenaw a cornerstone of industrial America.",
+    "images": [
+        {
+            "filename": "img0.jpg",
+            "alt_text": ""
+        },
+        {
+            "filename": "img1.jpg",
+            "alt_text": ""
+        },
+        {
+            "filename": "img2.jpg",
+            "alt_text": ""
+        },
+        {
+            "filename": "img3.jpg",
+            "alt_text": ""
+        },
+        {
+            "filename": "img4.jpg",
+            "alt_text": ""
+        }
+    ],
+    "activities": [
+        "Tour Historic Sites: Visit remnants of copper mining history, including former mines, hoist houses, and processing mills. Key locations include the Quincy Mine Hoist and the Calumet Visitor Center.",
+        "Heritage Sites: Explore 21 affiliated heritage sites that showcase the history of copper mining and the cultural heritage of the region, such as the Coppertown Mining Museum and the Finnish American Heritage Center.",
+        "Guided Tours: Participate in ranger-led programs that provide in-depth insights into mining operations, immigrant communities, and the area's natural history.",
+        "Hiking: Traverse trails that weave through historic mining ruins and natural landscapes unique to the Upper Peninsula.",
+        "Cultural Events: Attend events celebrating the traditions and stories of the communities who lived and worked in Copper Country, such as Finnish music and dance performances."
+    ],
+    "history": [
+        "The Keweenaw Peninsula has been home to copper mining for over 7,000 years. Native American communities were the first to extract copper from the region, using it to create tools and trade goods. In the mid-19th century, industrial copper mining took off, drawing immigrants from Finland, Italy, Ireland, and other nations to work in the mines and build vibrant communities.",
+        "By the late 19th and early 20th centuries, the Keweenaw Peninsula was one of the most important copper-producing regions in the world, fueling industrial growth in the United States. However, as copper reserves dwindled, mining operations ceased by the mid-20th century. Today, the park preserves this legacy, sharing stories of innovation, resilience, and cultural heritage.",
+        "Established in 1992, Keweenaw National Historical Park encompasses numerous historic sites and partner organizations that together tell the story of life and work in Michigan’s Copper Country."
+    ]
+    },
+  {
+    "name": "River Raisin National Battlefield Park",
+    "overview": "River Raisin National Battlefield Park, located in Monroe, Michigan, commemorates the pivotal events of the War of 1812. The site preserves the memory of the Battle of the River Raisin, a tragic yet significant moment in American history. Known for the rallying cry “Remember the Raisin,” the park honors the sacrifices of those who fought while educating visitors about the war’s impact on the nation. With interactive exhibits, historic grounds, and engaging programs, the park is a meaningful destination for history enthusiasts and families alike.",
+    "images": [
+        {
+        "filename": "img0.jpg",
+        "alt_text": ""
+        },
+        {
+        "filename": "img1.jpg",
+        "alt_text": ""
+        },
+        {
+        "filename": "img2.jpg",
+        "alt_text": ""
+        },
+        {
+        "filename": "img3.jpg",
+        "alt_text": ""
+        },
+        {
+        "filename": "img4.jpg",
+        "alt_text": ""
+        }
+    ],
+    "activities": [
+        "Interactive Exhibits: Visit the visitor center to explore exhibits that detail the events of the battle, the War of 1812, and the broader historical context.",
+        "Historic Walking Trails: Stroll along marked trails through the battlefield, featuring interpretive signs that guide visitors through key moments of the conflict.",
+        "Ranger-Led Programs: Attend ranger-led talks and reenactments that bring the history of the battlefield to life.",
+        "Living History Events: Experience living history demonstrations, including period costumes, weapon displays, and battle reenactments.",
+        "Junior Ranger Program: Engage children in learning about history through interactive activities and earning a Junior Ranger badge.",
+        "Special Events: Participate in annual commemorative events, including the Battle of the River Raisin anniversary programs in January."
+    ],
+    "history": [
+        "The Battle of the River Raisin, fought in January 1813, was one of the largest engagements of the War of 1812. American forces clashed with British troops and their Native American allies in a fight for control of southeastern Michigan. After initial success, American forces suffered a devastating defeat on January 22, 1813, with many killed, wounded, or taken captive. The aftermath saw atrocities committed against wounded soldiers, fueling the rallying cry, “Remember the Raisin,” which motivated American forces in subsequent battles.",
+        "The site of the battlefield was neglected for much of the 19th and 20th centuries. Efforts to preserve the area began in the 1990s, and in 2010, it was designated as a national battlefield park, ensuring the story of the battle and its significance would be remembered for future "
+    ]
+  },
+  {
+    "name": "Pictured Rocks National Lakeshore",
+    "overview": "Pictured Rocks National Lakeshore, located along the southern shore of Lake Superior in Michigan’s Upper Peninsula, is a breathtaking destination known for its colorful sandstone cliffs, pristine beaches, and dramatic waterfalls. Spanning over 40 miles of shoreline, the park offers a perfect blend of natural beauty and outdoor adventure. Visitors can explore crystal-clear waters, hike through lush forests, and marvel at the striking rock formations that give the park its name.",
+    "images": [
+        {
+            "filename": "img0.jpg",
+            "alt_text": ""
+        },
+        {
+            "filename": "img1.jpg",
+            "alt_text": ""
+        },
+        {
+            "filename": "img2.jpg",
+            "alt_text": ""
+        },
+        {
+            "filename": "img3.jpg",
+            "alt_text": ""
+        },
+        {
+            "filename": "img4.jpg",
+            "alt_text": ""
+        }
+    ],
+    "activities": [
+        "Hiking: Discover over 100 miles of trails, ranging from easy walks to challenging hikes. Popular routes include the Chapel Loop Trail and Miners Castle Trail.",
+        "Kayaking and Canoeing: Paddle along the base of the cliffs for an up-close view of the colorful rock formations, sea caves, and waterfalls.",
+        "Boat Tours: Take a guided boat tour to enjoy stunning views of the cliffs, beaches, and surrounding forests from the water.",
+        "Camping: Experience the great outdoors at one of the park’s backcountry or drive-in campgrounds. Wake up to the sound of waves and birdsong.",
+        "Photography: Capture iconic landmarks like Miners Castle, Chapel Rock, and Bridalveil Falls. The park’s sunsets over Lake Superior are particularly spectacular.",
+        "Winter Activities: Enjoy snowshoeing, cross-country skiing, or ice climbing during the colder months.",
+        "Wildlife Watching: Spot wildlife like black bears, white-tailed deer, and a variety of birds in their natural habitats."
+    ],
+    "history": [
+        "Pictured Rocks has long been a place of cultural and natural significance. The cliffs were named for their vivid colors and unique patterns, caused by mineral stains of iron, manganese, and copper. For centuries, the area was home to Native American tribes, particularly the Ojibwe, who lived off the land and used the waterways for travel and trade.",
+        "In the 19th century, the region became an important site for logging and shipping, as its location on Lake Superior made it a hub for transporting lumber and other goods. Recognizing its unique beauty and ecological importance, Pictured Rocks was designated as the United States’ first national lakeshore in 1966. Today, it is celebrated for its rich history, scenic landscapes, and outdoor recreation opportunities."
+    ]
+  },
+  {
+    "name": "North Country Trail",
+    "overview": "The North Country National Scenic Trail (NCT) is a hiking trail that spans an impressive 4,800 miles across eight states, from Vermont to North Dakota. In Michigan, the trail stretches over 1,100 miles, offering hikers the chance to experience the state’s diverse landscapes, including serene forests, rugged shorelines, and rolling hills. Whether you're seeking a short day hike or a multi-day backpacking adventure, the NCT provides an unparalleled opportunity to connect with Michigan’s natural beauty.",
+    "images": [
+        {
+            "filename": "img0.jpg",
+            "alt_text": ""
+        },
+        {
+            "filename": "img1.jpg",
+            "alt_text": ""
+        },
+        {
+            "filename": "img2.jpg",
+            "alt_text": ""
+        },
+        {
+            "filename": "img3.jpg",
+            "alt_text": ""
+        },
+        {
+            "filename": "img4.jpg",
+            "alt_text": ""
+        }
+    ],
+    "activities": [
+        "Hiking: Traverse the trail’s many sections, ranging from short loops to challenging multi-day treks. Popular segments include the Pictured Rocks National Lakeshore: Stunning views of Lake Superior and colorful cliffs, the Manistee National Forest: Quiet woodlands and riverside trails, and the Porcupine Mountains: Rugged terrain and breathtaking vistas.",
+        "Camping: Many segments of the trail feature nearby campgrounds or backcountry camping opportunities, allowing for immersive multi-day trips.",
+        "Wildlife Watching: Spot a variety of wildlife, including deer, black bears, and countless bird species.",
+        "Photography: Capture Michigan’s natural beauty, from dense forests to sparkling lakeshores.",
+        "Snowshoeing and Cross-Country Skiing: In the winter, enjoy sections of the trail transformed into snowy wonderlands."
+    ],
+    "history": [
+        "Designated as a National Scenic Trail in 1980, the North Country Trail was established to promote outdoor recreation and preserve America’s natural and cultural heritage. Michigan plays a crucial role in the trail’s journey, hosting the longest segment within any single state. Over the decades, the trail has grown through the efforts of dedicated volunteers and partnerships with local communities and public lands.",
+        "The NCT connects numerous iconic destinations in Michigan, including Pictured Rocks National Lakeshore, the Huron-Manistee National Forests, and Tahquamenon Falls. It is part of a larger network of national trails designed to celebrate the country’s natural beauty and provide outdoor enthusiasts with unparalleled experiences."
+    ]
+  },
+    {
+    "name": "Sleeping Bear Dunes National Lakeshore",
+    "overview": "Sleeping Bear Dunes National Lakeshore, located along the northeastern shore of Lake Michigan in Michigan’s Lower Peninsula, is a natural wonder celebrated for its towering sand dunes, crystal-clear waters, and lush forests. Spanning 35 miles of coastline, the park offers breathtaking views of Lake Michigan, serene inland lakes, and charming historic villages. A favorite destination for outdoor enthusiasts and families alike, Sleeping Bear Dunes is a perfect place to hike, swim, and immerse yourself in Michigan’s natural beauty.",
+        "images": [
+      {
+        "filename": "img0.jpg",
+        "alt_text": ""
+      },
+      {
+        "filename": "img1.jpg",
+        "alt_text": ""
+      },
+      {
+        "filename": "img2.jpg",
+        "alt_text": ""
+      },
+      {
+        "filename": "img3.jpg",
+        "alt_text": ""
+      },
+      {
+        "filename": "img4.jpg",
+        "alt_text": ""
+      }
+    ],
+    "activities": [
+        "Hiking: Explore over 100 miles of trails, from short nature walks to challenging climbs up the dunes. Popular trails include the Dune Climb, Empire Bluff Trail, and Pyramid Point Trail.",
+        "Swimming and Beachcombing: Relax on pristine beaches along Lake Michigan or take a refreshing swim in its cool, clear waters.",
+        "Dune Climb: Scale the iconic dunes for panoramic views of the lake and surrounding forests.",
+        "Kayaking and Paddleboarding: Paddle along the shoreline or on inland lakes like Platte River and Glen Lake.",
+        "Cycling: Ride the Sleeping Bear Heritage Trail, a 22-mile path connecting key points of interest in the park.",
+        "Scenic Drives: Take a leisurely drive along the Pierce Stocking Scenic Drive, featuring stunning overlooks of Lake Michigan and the dunes.",
+        "Camping: Enjoy a night under the stars at one of the park’s campgrounds or backcountry sites.",
+        "Wildlife Watching: Spot wildlife such as deer, foxes, and a variety of birds, including bald eagles.",
+        "Winter Activities: Snowshoeing and cross-country skiing are popular during the winter months."
+    ],
+    "history": [
+        "Sleeping Bear Dunes gets its name from an ancient Ojibwe legend about a mother bear and her cubs. According to the story, a mother bear and her two cubs tried to swim across Lake Michigan to escape a forest fire. The cubs drowned, forming the Manitou Islands, while the mother bear rested on the shore, becoming the dunes.",
+        "The area has long been home to Indigenous peoples who relied on its abundant natural resources. European settlers arrived in the 19th century, establishing farming communities, logging camps, and shipping routes. By the mid-20th century, conservationists sought to protect the area’s unique dunes and ecosystems. In 1970, Sleeping Bear Dunes was designated a national lakeshore, preserving its natural and cultural heritage for future generations."
+    ]
+  }
+]
