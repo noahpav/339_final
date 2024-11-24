@@ -1,40 +1,128 @@
 /* global.css */
 
-/* Light Mode Styles (Default) */
 /* Reset some basic styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body styling */
+body {
+    background-color: #f7f9fc;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
 }
 
 /* Header Layout */
 header {
-    background: #00287E;
-    padding: 10px 5px;
-    text-align: left;
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #00287E, #0043c6);
+    padding: 15px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1000;
 }
+
+header div {
+    display: flex;
+    align-items: center;
+}
+
 header img {
-    width: 10%;
+    width: 50px;
+    height: auto;
+    margin-right: 15px;
 }
+
 header a {
     color: white;
     text-decoration: none;
-    font-size: 1.5em;
-    padding-left: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-/* NavBar Layout */
-.navbar {
-    /* Display */
-    display: grid;
-    width: 100%;
-    padding: 8px;
-    grid-template-columns: repeat(3, 1fr);
+header a:hover {
+    color: #a2c0ff;
+}
 
-    /* Styles */
-    border: solid;
-    border-radius: 10px;
-    text-align: center;
+#menu-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Navbar */
+.navbar {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 15px;
+    background-color: #00287E;
+    border: solid 1px white;
+    border-radius: 5px;
+    padding: 10px;
+    width: 80%;
+    z-index: 1000;
+}
+
+.navbar a {
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #0043c6;
+    color: #fff;
+}
+
+.navbar a:last-child {
+    border-bottom: none;
+}
+
+.navbar.active {
+    display: flex;
+}
+
+/* Desktop View */
+@media (min-width: 768px) {
+    #menu-toggle {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        background: none;
+        box-shadow: none;
+        margin-top: 0;
+    }
+
+    .navbar a {
+        padding: 10px 20px;
+        border: none;
+        text-align: center;
+    }
+
+    .navbar a:hover {
+        background-color: rgba(0, 71, 178, 0.5);
+        border-radius: 5px;
+    }
 }

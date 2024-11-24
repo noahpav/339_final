@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Michigan Parks</title>
+    <title>Michigan's Parks</title>
 
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/index.css" />
@@ -18,10 +18,11 @@
           src="images/Coat_of_arms_of_Michigan.svg"
           alt="Michigan State Flag"
         />
-        <a href="index.html">Michigan National Parks</a>
+        <a href="index.html">Michigan's National Parks</a>
+        <button id="menu-toggle" aria-label="Toggle Navigation Menu">☰</button>
       </div>
     </header>
-    <nav class="navbar">
+    <nav id="navbar" class="navbar">
       <a href="parks/isle_royale_national_park/isle_royale_national_park.html"
         >Isle Royal</a
       >
@@ -46,11 +47,35 @@
       >
     </nav>
     <main class="content">
-      <h1>National Parks</h1>
-      <div id="map" style="height: 525px; width: 100%"></div>
+      <h1>Michigan's Six Parks</h1>
+      <section id="map"></section>
+      <section id="mi_parks">
+        <p>
+          Michigan's national parks showcase the rich history and breathtaking
+          natural beauty of the Great Lakes State. The legacy began with Isle
+          Royale National Park, designated in 1940, which is renowned for its
+          rugged wilderness, pristine waters, and fascinating wolf-moose
+          predator-prey study. Pictured Rocks National Lakeshore followed in
+          1966, becoming the first officially designated national lakeshore in
+          the United States, celebrated for its colorful cliffs, sandstone
+          formations, and serene waterfalls.
+        </p>
+        <p>
+          Beyond these landmarks, each park offers something unique. Sleeping
+          Bear Dunes National Lakeshore, with its towering dunes and sweeping
+          views of Lake Michigan, was named the "Most Beautiful Place in
+          America" by Good Morning America in 2011. Keweenaw National Historical
+          Park preserves the stories of Michigan's copper mining boom, while the
+          River Raisin National Battlefield Park honors the War of 1812 and the
+          struggle for freedom. Finally, the North Country Trail spans over
+          4,800 miles across multiple states, offering hikers a chance to
+          explore the diverse landscapes of Michigan and beyond.
+        </p>
+      </section>
     </main>
     <footer></footer>
 
+    <script src="js/nav.js"></script>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="js/map.js"></script>
   </body>
