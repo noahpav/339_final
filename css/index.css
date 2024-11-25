@@ -39,6 +39,15 @@ h1 {
     margin-bottom: 15px;
 }
 
+/* Footer */
+footer {
+    background: #00287E;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1rem;
+}
+
 /* Desktop View */
 @media (min-width: 1024px) {
     /* Map */
