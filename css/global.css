@@ -173,10 +173,6 @@ header a:hover {
         font-weight: bold;
 
     }
-
-    header a:hover {
-        color: #FBF2FB;
-    }
     header img {
         width: 90px;
         height: auto;
@@ -190,14 +186,16 @@ header a:hover {
         font-size: .5rem;
     }
     .navbar a {
-        padding: 2px 8px;
+        padding: 0 8px;
+        margin: 8px 0;
         text-align: right;
-        border-left: solid 1px white;
+        border-left: solid 1px rgb(255, 255, 255);
         font-size: .85rem;
     }
-    .navbar a:hover {
-        color: white;
+    header a:hover {
+        color: #FBF2FB;
     }
-
-
+    .navbar a:last-child {
+        padding-right: 20px;
+    }
 }

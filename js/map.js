@@ -3,7 +3,7 @@ const sharedLayers = {};
 
 // Initialize the map
 const map = L.map("map", {
-  center: [45, -86.35], // Center Michigan
+  center: [45.3, -86.35], // Center Michigan
   zoom: 6, // Initial zoom level
   minZoom: 6, // Minimum zoom level
   maxZoom: 100, // Maximum zoom level
@@ -34,14 +34,14 @@ map.setMaxBounds(bounds);
 // Custom Icon Definitions
 const trail_icon = L.icon({
   iconUrl: "images/arrowhead.png", // Path to the custom icon
-  iconSize: [35, 50], // Size of the icon [width, height]
-  iconAnchor: [17.5, 50], // Anchor point of the icon (center bottom)
+  iconSize: [50, 72], // Size of the icon [width, height]
+  iconAnchor: [25, 72], // Anchor point of the icon (center bottom)
   popupAnchor: [0, -40], // Anchor for the popup relative to the icon
 });
 const trail_icon_hover = L.icon({
   iconUrl: "images/arrowhead.png", // Path to the custom icon
-  iconSize: [55, 75], // Size of the icon [width, height]
-  iconAnchor: [27.5, 75], // Anchor point of the icon (center bottom)
+  iconSize: [75, 105], // Size of the icon [width, height]
+  iconAnchor: [37.5, 105], // Anchor point of the icon (center bottom)
   popupAnchor: [0, -40], // Anchor for the popup relative to the icon
 });
 
