@@ -105,3 +105,6 @@ section h2:last-of-type {
 section p:last-child {
     margin-bottom: 0;
 }
+
+@media (min-width: 1024px) {
+}

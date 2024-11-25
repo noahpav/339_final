@@ -67,7 +67,7 @@ const parks = [
   },
   {
     name: "North Country Trail",
-    lat: 45.8174, // Near Mackinac Bridge
+    lat: 45.8174,
     lng: -84.7278,
     url: "parks/north_country_trail/north_country_trail.html",
   },
@@ -160,9 +160,6 @@ fetch("data/parks_data.geojson")
         sharedLayers[parkName] = sharedLayers[parkName] || {};
         sharedLayers[parkName].boundary = layer;
 
-        layer.bindPopup(`<b>${parkName}</b>`);
-        //DEBUG: need to change this so it pops up the pin popup
-
         // Add hover effects for boundaries
         layer.on("mouseover", function () {
           layer.setStyle({
@@ -173,6 +170,15 @@ fetch("data/parks_data.geojson")
 
           const pin = sharedLayers[parkName]?.pin; // Get associated pin
           if (pin) pin.setIcon(trail_icon_hover); // Highlight pin
+          if (pin) {
+            pin.bindPopup(`
+              <b>${parkName}</b>
+              <a href="${pin.url}" target="_blank">View Details</a>
+            `);
+            layer.on("click", function () {
+              pin.openPopup();
+            });
+          }
         });
 
         layer.on("mouseout", function () {
